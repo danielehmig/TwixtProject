@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/moreButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/pause"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="@string/pauseString"
+            android:textSize="32sp"/>
+
+        <Button
+            android:id="@+id/placePeg"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="@string/pegString"
+            android:textSize="32sp"/>
+
+        <Button
+            android:id="@+id/placeBridge"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="@string/bridgeText"
+            android:textSize="32sp"/>
+
+        <Button
+            android:id="@+id/endTurn"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="@string/endTurnString"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/currentPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/currentPlayerString"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/green"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/whoseTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="50sp"
+            android:background="#00ccff" />
+
+        <Button
+            android:id="@+id/twixt"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/twixtString"
+            android:textSize="32sp"/>
+    </LinearLayout>
+
+    <edu.up.twixt.BoardSurfaceView
+        android:id="@+id/boardView"
+        android:layout_width="750sp"
+        android:layout_height="750sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="440dp"
+        android:layout_marginRight="40sp"
+        android:layout_marginBottom="20sp" />
+
+</RelativeLayout>

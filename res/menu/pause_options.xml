@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/viewRules" android:title="View Rules" android:visible="true" android:enabled="true"></item>
+    <item android:id="@+id/surrender" android:title="Surrender" android:visible="true" android:enabled="true"></item>
+    <item android:id="@+id/saveAndQuit" android:title="Quit " android:visible="true" android:enabled="true"></item>
+    
+
+</menu>

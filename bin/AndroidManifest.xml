@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.up.game"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:icon="@drawable/twixt_lg"
+        android:label="@string/twixtName"
+        android:theme="@android:style/Theme.Holo.Light">
+        <activity
+            android:name=".GameMainActivity"
+            android:label="@string/title_activity_game_main" >
+        </activity>
+        <activity android:name=".GameConfigActivity" >
+            android:label="GameConfigActivity"
+            android:windowSoftInputMode="adjustResize"
+        </activity>
+        <activity android:name="edu.up.twixt.TwixtMainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.up.twixt.TwixtHumanPlayer"
+            android:screenOrientation="landscape"
+			android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity android:name="edu.up.twixt.TwixtEasyComputerPlayer" >
+        </activity>
+        <activity android:name="edu.up.twixt.TwixtSmartComputerPlayer" >
+        </activity>
+        <activity
+            android:name="edu.up.twixt.ViewRulesActivity"
+            android:label="@string/title_activity_view_rules" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.up.twixt.TwixtHumanPlayer" />
+        </activity>
+    </application>
+
+</manifest>
